@@ -11,10 +11,13 @@ async function uploadImage() {
   formData.append("photo", file);
 
   try {
-    const response = await fetch("http://127.0.0.1:8081/classify_car_image", {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      " https://a723-45-123-222-165.ngrok-free.app/classify_car_image",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
     const responseData = await response.json(); // Parse JSON response directly
     displayResult(responseData); // Display the result
 
