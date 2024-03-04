@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car insight Provider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Car Insight Provider</h1>
+      <div class="upload-section">
+        <label for="image-input" class="upload-label">
+          <input type="file" id="image-input" class="file-input" />
+          <span class="upload-text">Choose Image</span>
+        </label>
+        <button onclick="uploadImage()" class="upload-button">Upload</button>
+      </div>
+      <div class="image-preview-container" id="image-preview-container">
+        <img
+          id="image-preview"
+          class="image-preview"
+          src=""
+          alt="Uploaded Image"
+        />
+      </div>
+      <div class="result-container" id="result-container">
+        <h2>Result:</h2>
+        <div id="result" class="result"></div>
+      </div>
+
+      <div>
+        <div>
+          <h2 class="texty">Specifications:</h2>
+          <ul id="insetter"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </body>
+</html>
