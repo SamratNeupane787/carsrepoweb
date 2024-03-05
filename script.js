@@ -12,7 +12,7 @@ async function uploadImage() {
 
   try {
     const response = await fetch(
-      " https://a723-45-123-222-165.ngrok-free.app/classify_car_image",
+      "https://casual-tolerant-bunny.ngrok-free.app/classify_car_image",
       {
         method: "POST",
         body: formData,
